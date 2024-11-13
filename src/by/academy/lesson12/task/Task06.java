@@ -26,8 +26,8 @@ public class Task06 {
             if ((t1 < t2? y > t1 & y < t2: y > t2 & y < t1) ||
                 (t3 < t4? y > t3 & y < t4: y > t4 & y < t3)) {
                 System.out.printf("y = %s\n",y);
-                if (count++ == 20){
-                    break;
+                if (++count == 20){
+                    return;
                 }
             }
         }

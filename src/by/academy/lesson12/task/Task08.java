@@ -13,8 +13,11 @@ public class Task08 {
                 yOld = yNew;
             }
             x+= 0.1d;
+            if (x > 10) {
+                return;
+            }
             yNew = x * x - Math.pow(Math.E, 2 * x) + 4;
-        }while (((yOld < 0 & yNew < 0) || (yOld > 0 & yNew > 0)) && x<=10);
+        }while ((yOld < 0 & yNew < 0) || (yOld > 0 & yNew > 0));
         System.out.printf("нуль функции пройден при x = %.1f\n", x);
     }
 }
